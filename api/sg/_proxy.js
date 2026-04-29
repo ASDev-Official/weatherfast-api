@@ -1,17 +1,19 @@
 const UPSTREAM_BASE_URL = "https://api-open.data.gov.sg/v2/real-time/api";
 const API_KEY_HEADER = "x-api-key";
 const DEFAULT_TIMEOUT_MS = 8000;
-
-function getApiKey() {
-  return process.env.DATA_GOV_SG_API_KEY || "";
-}
-
-function getRequestMethod(req) {
-  return String(req.method || "GET").toUpperCase();
-}
-
-function copyUpstreamHeaders(upstreamResponse, res) {
-  for (const [headerName, headerValue] of upstreamResponse.headers.entries()) {
+    if (
+      normalized === 'set-cookie' ||
+      normalized === 'connection' ||
+      normalized === 'keep-alive' ||
+      normalized === 'proxy-authenticate' ||
+      normalized === 'proxy-authorization' ||
+      normalized === 'te' ||
+      normalized === 'trailers' ||
+      normalized === 'transfer-encoding' ||
+      normalized === 'upgrade' ||
+      normalized === 'content-encoding' ||
+      normalized === 'content-length'
+    ) {
     const normalized = headerName.toLowerCase();
 
     if (
