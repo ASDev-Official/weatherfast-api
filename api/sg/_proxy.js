@@ -66,10 +66,13 @@ async function proxyRealTimeApi(req, res, upstreamPath) {
 
   const upstreamUrl = new URL(`${UPSTREAM_BASE_URL}/${upstreamPath}`);
   const incomingUrl = new URL(req.url, "http://localhost");
-  upstreamUrl.search = incomingUrl.search;
 
   // Support debug logging when caller appends ?debug=true
   const debug = incomingUrl.searchParams.get("debug") === "true";
+
+  // Copy query params to upstream but exclude debug param
+  incomingUrl.searchParams.delete("debug");
+  upstreamUrl.search = incomingUrl.search;
   if (debug) {
     const maskedKey = apiKey
       ? apiKey.length > 4
