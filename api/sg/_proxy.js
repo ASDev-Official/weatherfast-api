@@ -1,5 +1,5 @@
 const UPSTREAM_BASE_URL = "https://api-open.data.gov.sg/v2/real-time/api";
-const API_KEY_HEADER = "x-api-key";
+const API_KEY_HEADER = "api-key";
 const DEFAULT_TIMEOUT_MS = 8000;
 
 function getApiKey() {
