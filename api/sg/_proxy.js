@@ -68,6 +68,20 @@ async function proxyRealTimeApi(req, res, upstreamPath) {
   const incomingUrl = new URL(req.url, "http://localhost");
   upstreamUrl.search = incomingUrl.search;
 
+  // Support debug logging when caller appends ?debug=true
+  const debug = incomingUrl.searchParams.get("debug") === "true";
+  if (debug) {
+    const maskedKey = apiKey
+      ? apiKey.length > 4
+        ? `${apiKey.slice(0, 4)}...(${apiKey.length} chars)`
+        : apiKey
+      : "none";
+
+    console.log(
+      `[weatherfast proxy] debug=true method=${method} incoming=${req.url} upstream=${upstreamUrl.href} apiKey=${maskedKey}`,
+    );
+  }
+
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), DEFAULT_TIMEOUT_MS);
 
@@ -80,6 +94,23 @@ async function proxyRealTimeApi(req, res, upstreamPath) {
       },
       signal: controller.signal,
     });
+
+    if (debug) {
+      try {
+        const upstreamHeaders = Object.fromEntries(
+          upstreamResponse.headers.entries(),
+        );
+        console.log(
+          `[weatherfast proxy] upstream status=${upstreamResponse.status} headers=${JSON.stringify(
+            upstreamHeaders,
+          )}`,
+        );
+      } catch (e) {
+        console.log(
+          `[weatherfast proxy] upstream status=${upstreamResponse.status}`,
+        );
+      }
+    }
 
     res.statusCode = upstreamResponse.status;
     copyUpstreamHeaders(upstreamResponse, res);
