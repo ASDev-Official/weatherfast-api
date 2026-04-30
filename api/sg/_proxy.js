@@ -86,12 +86,25 @@ async function proxyRealTimeApi(req, res, upstreamPath) {
   const timeoutId = setTimeout(() => controller.abort(), DEFAULT_TIMEOUT_MS);
 
   try {
+    const upstreamHeaders = {
+      accept: req.headers.accept || "application/json",
+      // include both header variants for compatibility with upstream
+      [API_KEY_HEADER]: apiKey,
+      "x-api-key": apiKey,
+      "api-key": apiKey,
+    };
+
+    if (debug) {
+      console.log(
+        `[weatherfast proxy] sending upstream headers: ${Object.keys(
+          upstreamHeaders,
+        ).join(",")}`,
+      );
+    }
+
     const upstreamResponse = await fetch(upstreamUrl, {
       method,
-      headers: {
-        [API_KEY_HEADER]: apiKey,
-        accept: req.headers.accept || "application/json",
-      },
+      headers: upstreamHeaders,
       signal: controller.signal,
     });
 
