@@ -20,21 +20,21 @@ module.exports = function handler(req, res) {
   // Return test data in typical Firestore document format (with id merged into data)
   const testNotifications = [
     {
-      id: "notification-test-1234",
-      title: "Welcome to WeatherFast API",
-      message: "This is a simulated test notification for the upcoming Firestore integration.",
+      id: "upcoming",
+      title: "Coming soon!",
+      message: "This feature is currently in development",
       createdAt: new Date().toISOString(),
       read: false,
       type: "info",
-      actionUrl: "/"
-    }
+      actionUrl: "/",
+    },
   ];
 
   return res.status(200).json({
     data: testNotifications,
     meta: {
       total: testNotifications.length,
-      source: "mock"
-    }
+      source: "mock",
+    },
   });
 };
