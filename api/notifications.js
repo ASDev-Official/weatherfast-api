@@ -26,7 +26,7 @@ module.exports = function handler(req, res) {
       createdAt: new Date().toISOString(),
       read: false,
       type: "info",
-      actionUrl: "/",
+      actionUrl: "",
     },
   ];
 
