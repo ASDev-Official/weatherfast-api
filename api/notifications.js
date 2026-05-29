@@ -24,7 +24,7 @@ module.exports = function handler(req, res) {
       title: "✨ New Status Page",
       message:
         "We have launched a new status page to keep you informed about our service status. Ensure you've updated your app to the latest version, and then head over to Settings -> System Status to view it!",
-      createdAt: new Date().toISOString(),
+      createdAt: "20260529T230000+0800",
       read: false,
       type: "info",
       actionUrl: "https://status.weatherfast.aadish.dev",
