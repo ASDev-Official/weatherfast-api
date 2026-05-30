@@ -38,7 +38,7 @@ module.exports = function handler(req, res) {
       createdAt: "20260529T230000+0800",
       read: false,
       type: "warning",
-      actionUrl: "https://status.weatherfast.aadish.dev",
+      actionUrl: "",
     },
   ];
 
