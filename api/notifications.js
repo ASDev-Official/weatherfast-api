@@ -35,7 +35,7 @@ module.exports = function handler(req, res) {
         "🐛 Bug Fix - Getting weather for European locations have been fixed.",
       message:
         "A bug where fetching weather for certain European locations would fail has been resolved. Please update to the latest version to benefit from this fix.",
-      createdAt: "20260529T230000+0800",
+      createdAt: "20260530T080000+0800",
       read: false,
       type: "warning",
       actionUrl: "",
