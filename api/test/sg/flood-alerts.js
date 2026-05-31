@@ -22,7 +22,7 @@ module.exports = function handler(req, res) {
           datetime: "2025-05-22T09:55:00+08:00",
           item: {
             type: "observation",
-            identifier: "2.49.0.0.702.2-BCM-17586121561884-DYOONG",
+            identifier: "2.49.0.0.702.2-BCM-17586121561884-DYOONG-1",
             isStationData: false,
             msgType: "Alert",
             references:
@@ -34,7 +34,7 @@ module.exports = function handler(req, res) {
               {
                 area: {
                   areaDesc:
-                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place",
+                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place (1)",
                   circle: [1.33201, 103.87015, 1],
                 },
                 category: "Met",
@@ -46,7 +46,7 @@ module.exports = function handler(req, res) {
                   value: "OET-081",
                   valueName: "OET:v1.2",
                 },
-                headline: "Flash Flood Alert",
+                headline: "Flash Flood Alert [TEST]",
                 instruction:
                   "Please avoid this area for the next one (1) hour.",
                 responseType: "Avoid",
@@ -58,6 +58,166 @@ module.exports = function handler(req, res) {
           },
           updatedTimestamp: "2025-05-22T10:03:18+08:00",
         },
+        {
+          datetime: "2025-05-22T09:55:00+08:00",
+          item: {
+            type: "observation",
+            identifier: "2.49.0.0.702.2-BCM-17586121561884-DYOONG-2",
+            isStationData: false,
+            msgType: "Alert",
+            references:
+              "pub_joint_ops_ctr@pub.gov.sg, 2.49.0.0.702.2-BCM-17586117885024-DYOONG, 2025-09-23T15:16:28+08:00",
+            sender: "pub_joint_ops_ctr@pub.gov.sg",
+            scope: "Public",
+            status: "Actual",
+            readings: [
+              {
+                area: {
+                  areaDesc:
+                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place (2)",
+                  circle: [1.33201, 103.87015, 1],
+                },
+                category: "Met",
+                certainty: "Observed",
+                description:
+                  "Flash flood at Bt Timah Rd from Wilby Rd to Blackmore Dr. Please avoid the area. Issued 1705 hrs.",
+                event: "Flood",
+                eventCode: {
+                  value: "OET-081",
+                  valueName: "OET:v1.2",
+                },
+                headline: "Flash Flood Alert [TEST]",
+                instruction:
+                  "Please avoid this area for the next one (1) hour.",
+                responseType: "Avoid",
+                senderName: "PUB",
+                severity: "Minor",
+                urgency: "Immediate",
+              },
+            ],
+          },
+          updatedTimestamp: "2025-05-22T10:03:18+08:00",
+        },
+        {
+          datetime: "2025-05-22T09:55:00+08:00",
+          item: {
+            type: "observation",
+            identifier: "2.49.0.0.702.2-BCM-17586121561884-DYOONG-3",
+            isStationData: false,
+            msgType: "Alert",
+            references:
+              "pub_joint_ops_ctr@pub.gov.sg, 2.49.0.0.702.2-BCM-17586117885024-DYOONG, 2025-09-23T15:16:28+08:00",
+            sender: "pub_joint_ops_ctr@pub.gov.sg",
+            scope: "Public",
+            status: "Actual",
+            readings: [
+              {
+                area: {
+                  areaDesc:
+                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place (3)",
+                  circle: [1.33201, 103.87015, 1],
+                },
+                category: "Met",
+                certainty: "Observed",
+                description:
+                  "Flash flood at Bt Timah Rd from Wilby Rd to Blackmore Dr. Please avoid the area. Issued 1705 hrs.",
+                event: "Flood",
+                eventCode: {
+                  value: "OET-081",
+                  valueName: "OET:v1.2",
+                },
+                headline: "Flash Flood Alert [TEST]",
+                instruction:
+                  "Please avoid this area for the next one (1) hour.",
+                responseType: "Avoid",
+                senderName: "PUB",
+                severity: "Minor",
+                urgency: "Immediate",
+              },
+            ],
+          },
+          updatedTimestamp: "2025-05-22T10:03:18+08:00",
+        },
+        {
+          datetime: "2025-05-22T09:55:00+08:00",
+          item: {
+            type: "observation",
+            identifier: "2.49.0.0.702.2-BCM-17586121561884-DYOONG-4",
+            isStationData: false,
+            msgType: "Alert",
+            references:
+              "pub_joint_ops_ctr@pub.gov.sg, 2.49.0.0.702.2-BCM-17586117885024-DYOONG, 2025-09-23T15:16:28+08:00",
+            sender: "pub_joint_ops_ctr@pub.gov.sg",
+            scope: "Public",
+            status: "Actual",
+            readings: [
+              {
+                area: {
+                  areaDesc:
+                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place (4)",
+                  circle: [1.33201, 103.87015, 1],
+                },
+                category: "Met",
+                certainty: "Observed",
+                description:
+                  "Flash flood at Bt Timah Rd from Wilby Rd to Blackmore Dr. Please avoid the area. Issued 1705 hrs.",
+                event: "Flood",
+                eventCode: {
+                  value: "OET-081",
+                  valueName: "OET:v1.2",
+                },
+                headline: "Flash Flood Alert [TEST]",
+                instruction:
+                  "Please avoid this area for the next one (1) hour.",
+                responseType: "Avoid",
+                senderName: "PUB",
+                severity: "Minor",
+                urgency: "Immediate",
+              },
+            ],
+          },
+          updatedTimestamp: "2025-05-22T10:03:18+08:00",
+        },
+        {
+          datetime: "2025-05-22T09:55:00+08:00",
+          item: {
+            type: "observation",
+            identifier: "2.49.0.0.702.2-BCM-17586121561884-DYOONG-5",
+            isStationData: false,
+            msgType: "Alert",
+            references:
+              "pub_joint_ops_ctr@pub.gov.sg, 2.49.0.0.702.2-BCM-17586117885024-DYOONG, 2025-09-23T15:16:28+08:00",
+            sender: "pub_joint_ops_ctr@pub.gov.sg",
+            scope: "Public",
+            status: "Actual",
+            readings: [
+              {
+                area: {
+                  areaDesc:
+                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place (5)",
+                  circle: [1.33201, 103.87015, 1],
+                },
+                category: "Met",
+                certainty: "Observed",
+                description:
+                  "Flash flood at Bt Timah Rd from Wilby Rd to Blackmore Dr. Please avoid the area. Issued 1705 hrs.",
+                event: "Flood",
+                eventCode: {
+                  value: "OET-081",
+                  valueName: "OET:v1.2",
+                },
+                headline: "Flash Flood Alert [TEST]",
+                instruction:
+                  "Please avoid this area for the next one (1) hour.",
+                responseType: "Avoid",
+                senderName: "PUB",
+                severity: "Minor",
+                urgency: "Immediate",
+              },
+            ],
+          },
+          updatedTimestamp: "2025-05-22T10:03:18+08:00",
+        }
       ],
     },
     errorMsg: "",
