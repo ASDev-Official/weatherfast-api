@@ -34,7 +34,7 @@ module.exports = function handler(req, res) {
               {
                 area: {
                   areaDesc:
-                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place (1)",
+                    "at Bt Timah Rd from Wilby Rd to Blackmore Dr",
                   circle: [1.33201, 103.87015, 1],
                 },
                 category: "Met",
@@ -74,13 +74,13 @@ module.exports = function handler(req, res) {
               {
                 area: {
                   areaDesc:
-                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place (2)",
-                  circle: [1.33201, 103.87015, 1],
+                    "at Orchard Rd from Scotts Rd to Bideford Rd",
+                  circle: [1.3039, 103.8320, 1],
                 },
                 category: "Met",
                 certainty: "Observed",
                 description:
-                  "Flash flood at Bt Timah Rd from Wilby Rd to Blackmore Dr. Please avoid the area. Issued 1705 hrs.",
+                  "Flash flood at Orchard Rd from Scotts Rd to Bideford Rd. Please avoid the area. Issued 1710 hrs.",
                 event: "Flood",
                 eventCode: {
                   value: "OET-081",
@@ -114,13 +114,13 @@ module.exports = function handler(req, res) {
               {
                 area: {
                   areaDesc:
-                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place (3)",
-                  circle: [1.33201, 103.87015, 1],
+                    "at Dunearn Rd from Yarwood Ave to Binjai Park",
+                  circle: [1.3364, 103.7915, 1],
                 },
                 category: "Met",
                 certainty: "Observed",
                 description:
-                  "Flash flood at Bt Timah Rd from Wilby Rd to Blackmore Dr. Please avoid the area. Issued 1705 hrs.",
+                  "Flash flood at Dunearn Rd from Yarwood Ave to Binjai Park. Please avoid the area. Issued 1715 hrs.",
                 event: "Flood",
                 eventCode: {
                   value: "OET-081",
@@ -154,13 +154,13 @@ module.exports = function handler(req, res) {
               {
                 area: {
                   areaDesc:
-                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place (4)",
-                  circle: [1.33201, 103.87015, 1],
+                    "at Upper Thomson Rd from Jalan Todak to Sin Ming Ave",
+                  circle: [1.3541, 103.8340, 1],
                 },
                 category: "Met",
                 certainty: "Observed",
                 description:
-                  "Flash flood at Bt Timah Rd from Wilby Rd to Blackmore Dr. Please avoid the area. Issued 1705 hrs.",
+                  "Flash flood at Upper Thomson Rd from Jalan Todak to Sin Ming Ave. Please avoid the area. Issued 1720 hrs.",
                 event: "Flood",
                 eventCode: {
                   value: "OET-081",
@@ -194,13 +194,13 @@ module.exports = function handler(req, res) {
               {
                 area: {
                   areaDesc:
-                    "at 163 Pandan Loop from 2024 Bukit Batok Street to 9 Bishan Place (5)",
-                  circle: [1.33201, 103.87015, 1],
+                    "at Commonwealth Ave from Queensway to Margaret Dr",
+                  circle: [1.3005, 103.7997, 1],
                 },
                 category: "Met",
                 certainty: "Observed",
                 description:
-                  "Flash flood at Bt Timah Rd from Wilby Rd to Blackmore Dr. Please avoid the area. Issued 1705 hrs.",
+                  "Flash flood at Commonwealth Ave from Queensway to Margaret Dr. Please avoid the area. Issued 1725 hrs.",
                 event: "Flood",
                 eventCode: {
                   value: "OET-081",
