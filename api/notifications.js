@@ -20,16 +20,6 @@ module.exports = function handler(req, res) {
   // Return test data in typical Firestore document format (with id merged into data)
   const testNotifications = [
     {
-      id: "statuspage",
-      title: "✨ New Status Page",
-      message:
-        "We have launched a new status page to keep you informed about our service status. Ensure you've updated your app to the latest version, and then head over to Settings -> System Status to view it!",
-      createdAt: "20260529T230000+0800",
-      read: false,
-      type: "info",
-      actionUrl: "https://status.weatherfast.aadish.dev",
-    },
-    {
       id: "bugfix-01",
       title:
         "🐛 Bug Fix - Getting weather for European locations have been fixed.",
@@ -39,6 +29,16 @@ module.exports = function handler(req, res) {
       read: false,
       type: "warning",
       actionUrl: "",
+    },
+    {
+      id: "weblate-01",
+      title: "🌐 Contribute to our Weblate!",
+      message:
+        "We've launched Weblate-based community translations for WeatherFast. If you'd like to see WeatherFast in your language or contribute to improving translations, please visit our Weblate project and join the effort!",
+      createdAt: "20260530T080000+0800",
+      read: false,
+      type: "info",
+      actionUrl: "https://hosted.weblate.org/engage/asdev-weatherfast/",
     },
   ];
 
