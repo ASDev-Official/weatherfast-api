@@ -23,7 +23,7 @@ module.exports = function handler(req, res) {
       id: "brokenfeature-01",
       title: "🚨 IMPORTANT: WeatherFast New Feature Issues",
       message:
-        "The new calendar feature in WeatherFast may experience issues on some devices. Widgets may also randomly change the displayed location. A fix for these issue are underway. Do not post any bug reports regarding these issues, as we are already aware and working on a solution. We apologize for the inconvenience.",
+        "The new calendar feature in WeatherFast may experience issues on some devices. A fix for these issues are underway. Do not post any bug reports regarding these issues, as we are already aware and working on a solution. We apologize for the inconvenience.",
       createdAt: "20260705T213000+0800",
       read: false,
       type: "error",
