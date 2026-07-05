@@ -24,7 +24,7 @@ module.exports = function handler(req, res) {
       title: "🚨 IMPORTANT: Calendar Feature Issues",
       message:
         "The new calendar feature released with WeatherFast v3.9.0 may experience issues on some devices. We are working on it and will provide an update at the latest.",
-      createdAt: "2026075T213000+0800",
+      createdAt: "20260705T213000+0000",
       read: false,
       type: "error",
       actionUrl: "",
