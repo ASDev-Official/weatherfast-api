@@ -33,7 +33,7 @@ module.exports = function handler(req, res) {
       id: "weblate-01",
       title: "🌐 Contribute to our Weblate!",
       message:
-        "We've launched Weblate-based community translations for WeatherFast. If you'd like to see WeatherFast in your language or contribute to improving translations, please visit our Weblate project and join the effort!",
+        "If you'd like to see WeatherFast in your language or contribute to improving translations, please visit our Weblate project and join the effort!",
       createdAt: "",
       read: false,
       type: "info",
