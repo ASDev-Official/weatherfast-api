@@ -21,10 +21,10 @@ module.exports = function handler(req, res) {
   const testNotifications = [
     {
       id: "brokenfeature-01",
-      title: "🚨 IMPORTANT: WeatherFast New Feature Issues",
+      title: "🚨✅ IMPORTANT: WeatherFast New Feature Issue Fixed",
       message:
-        "The new calendar feature in WeatherFast may experience issues on some devices. A fix for these issues are underway. Do not post any bug reports regarding these issues, as we are already aware and working on a solution. We apologize for the inconvenience.",
-      createdAt: "20260705T213000+0800",
+        "We have fixed multiple issues related to the calendar feature. Please update your app to v3.9.2 through the Play Store. If you are on web, refresh the page.",
+      createdAt: "20260708T154500+0800",
       read: false,
       type: "error",
       actionUrl: "",
